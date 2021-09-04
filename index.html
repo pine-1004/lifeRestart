@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="爬" />
+    <meta name="keywords" content="人生重开模拟器 liferestart life restart remake 人生重来" />
+    <link id="themeLink" rel="stylesheet" href="style.css">
+    <title>Life Restart</title>
+    <style>
+        /* 标题 */
+
+        .header {
+            background-color: #f3f3f3;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* 标题字体加大 */
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .covered_image {
+            display: block;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            transition: .5s ease;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background-color: #ccc;
+            overflow: hidden;
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+
+        .container:hover .image {
+            opacity: 0.2;
+        }
+
+        .cover_text {
+            white-space: nowrap;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body style="margin: 0; height: 100%">
+    <div class="header">
+        <h1>Life Restart</h1>
+        <p>点击刘若松重开人生</P>
+    </div>
+    
+    <div class="container">
+        <a href="view/index.html">
+            <img src="https://211nb.vercel.app/images/刘若松1.jpg" alt="找不到图片，请反馈给网页制作者" class="covered_image">
+            <div class="overlay">
+                <div class="cover_text">重开</div>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
